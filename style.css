@@ -1,0 +1,482 @@
+body{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+#first-slide{
+   display: grid;
+   height: minmax(100vh,1rem);
+   grid-template-columns: minmax(50px,100px) minmax(50px,100px) 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(50px,100px) minmax(50px,100px);
+   grid-template-rows: minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px);
+   background-color: #c85d2a;
+}
+
+.page{
+   background-color: #d86b38;
+   height: minmax(100vh,1rem);
+}
+
+hr.ruler{
+   border-top: 1px dashed red;
+   box-shadow: 0 0 0 20px #d86b38;
+   width: 100%;
+}
+h1{
+   font-family: "Nerko One", cursive;
+   font-weight: 200;
+   font-style: normal;
+   color: #eda20f;
+   font-size: 80px;
+   display: flex;
+   justify-content: center;
+}
+h2{
+   display: flex;
+   font-family: "Roboto Slab", serif;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+   color: #d6bf5f;
+}
+h3{
+   color: #c2b271;
+   font-family: "Roboto Slab", serif;
+   font-size:medium;
+   font-style: normal;
+}
+
+.kbach-top-left{
+   grid-area: 1/1/3/3;
+   transform: scale(1,-1);
+}
+.kbach-top-right{
+   grid-area: -9/-1/-7/-3;
+   transform: scale(-1,-1); 
+}
+.kbach-bott-left{
+   grid-area: 7/1/9/3;
+}
+.kbach-bott-right{
+   grid-area: -1/-1/-3/-3;
+   transform: scale(-1,1);
+}
+.kbach{
+   height: 200px;
+   width: 200px;
+}
+
+img[src="./resource/cambodia-angkorwat.jpg"]{
+   height: 250px;
+   width: 600px;  
+}
+.angkor{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   grid-area: 2/4/5/10;
+}
+.my-name,.hello{
+   grid-area: 5/4/6/10;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.my-career{
+   grid-area: 7/4/8/10;
+   justify-content: center;
+}
+.page-2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.intro{
+   max-width: 500px;
+}
+/* .page-2{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+}
+/* .intro-page2{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100vh;
+   flex-wrap: wrap;
+} */
+.my-photo{
+   grid-area: 1/2/2/3;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+img[src="./resource/photo_2023-12-16_19-19-55.jpg"]{
+   height: 300px;
+   width: 200px;
+}
+.hello{
+   width: 100vh;
+   grid-area: 2/2/3/3;
+}
+.intro{
+   display: flex;
+   grid-area: 3/2/4/3;
+   text-align: center;
+   font-family: "Roboto Slab", serif;
+   font-optical-sizing: auto;
+   font-weight: bold;
+   font-style: normal;
+   color: #d6bf5f;
+   flex-wrap: wrap;
+} */
+/* page 3 */
+.page-3{
+   display: grid;
+   grid-template-rows:  minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px);
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.learning{
+   grid-area: 3/2/5/-2;        
+   margin-left: 100px;
+   margin-right: 100px;
+}
+.int-thing{
+   grid-area: 5/2/7/-2;
+   margin-top: 100px;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+.my-skill-img{
+   width: 150px;
+   height: 150px;
+   
+   padding-right: 15px;
+}
+.b-my-skill-img-1{
+   grid-area: 3/1/5/3;
+   display: flex;
+   justify-content: space-around;
+   float: left;
+   
+}
+.b-my-skill-img-2{
+   grid-area: 5/1/7/3;
+   display: flex;
+   justify-content: space-around;
+   float: left;
+   clear: both;
+}
+.my-skill{
+   grid-area: 1/3/3/6;
+   margin-top: 0;
+}
+
+/* page 4 */
+.page-4{
+  height: 55vh;
+}
+.contact-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+a{
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+}
+.button{
+ color: white;
+ background-color: #007BFF;
+ text-align: center;
+ text-decoration: none;
+ border-radius: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* padding-left: 10px;
+ padding-right: 10px; */
+ width: 120px;
+ height: 30px;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+
+.git{
+  margin-top: 0;
+  /* align-self: center; */
+}
+.final-intro{
+  /* width: 500px; */
+  max-width: 500px;
+}
+
+/* footer */
+
+.page-5{
+  background-color: #c15724;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.social-media{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+btn{
+  height: 20px;
+  width: 40px;
+  background-color: aqua;
+  border-radius: 20%;
+}
+
+
+
+@media(max-width: 600px){
+   body{
+      display: flex;
+      flex-direction: column;
+   }
+   #first-slide{
+      display: grid;
+      height: minmax(100vh,1rem);
+      grid-template-columns: minmax(50px,100px) minmax(50px,100px) 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr minmax(50px,100px) minmax(50px,100px);
+      grid-template-rows: minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px);
+      background-color: #c85d2a;
+   }
+   
+   .page{
+      background-color: #d86b38;
+      height: minmax(100vh,1rem);
+   }
+   
+   hr.ruler{
+      border-top: 1px dashed red;
+      box-shadow: 0 0 0 20px #d86b38;
+      
+   }
+   h1{
+      font-family: "Nerko One", cursive;
+      font-weight: 200;
+      font-style: normal;
+      color: #eda20f;
+      font-size: 80px;
+      display: flex;
+      justify-content: center;
+   }
+   h2{
+      display: flex;
+      font-family: "Roboto Slab", serif;
+      font-optical-sizing: auto;
+      font-weight: bold;
+      font-style: normal;
+      color: #d6bf5f;
+   }
+   h3{
+      color: #c2b271;
+      font-family: "Roboto Slab", serif;
+      font-size:medium;
+      font-style: normal;
+   }
+   
+   .kbach-top-left{
+      grid-area: 1/1/3/3;
+      transform: scale(1,-1);
+   }
+   .kbach-top-right{
+      grid-area: -9/-1/-7/-3;
+      transform: scale(-1,-1); 
+   }
+   .kbach-bott-left{
+      grid-area: 7/1/9/3;
+   }
+   .kbach-bott-right{
+      grid-area: -1/-1/-3/-3;
+      transform: scale(-1,1);
+   }
+   .kbach{
+      height: 200px;
+      width: 200px;
+   }
+   
+   img[src="./resource/cambodia-angkorwat.jpg"]{
+      height: 250px;
+      width: 600px;  
+   }
+   .angkor{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: 3/4/6/10;
+   }
+   .my-name,.hello{
+      grid-area: 6/1/8/-1;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+   .my-career{
+      grid-area: 8/4/7/10;
+      justify-content: center;
+   }
+   .page-2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .intro{
+      max-width: 500px;
+   }
+   /* .page-2{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+   }
+   /* .intro-page2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vh;
+      flex-wrap: wrap;
+   } */
+   .my-photo{
+      grid-area: 1/2/2/3;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+   }
+   img[src="./resource/photo_2023-12-16_19-19-55.jpg"]{
+      height: 300px;
+      width: 200px;
+   }
+   .hello{
+      width: 100vh;
+      grid-area: 2/2/3/3;
+   }
+   .intro{
+      display: flex;
+      grid-area: 3/2/4/3;
+      text-align: center;
+      font-family: "Roboto Slab", serif;
+      font-optical-sizing: auto;
+      font-weight: bold;
+      font-style: normal;
+      color: #d6bf5f;
+      flex-wrap: wrap;
+   } */
+   /* page 3 */
+   .page-3{
+      display: grid;
+      grid-template-rows:  minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px) minmax(50px,100px);
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   }
+   .learning{
+      grid-area: 3/2/5/-2;        
+      margin-left: 100px;
+      margin-right: 100px;
+   }
+   .int-thing{
+      grid-area: 5/2/7/-2;
+      margin-top: 100px;
+      margin-left: 100px;
+      margin-right: 100px;
+   }
+   .my-skill-img{
+      width: 150px;
+      height: 150px;
+      
+      padding-right: 15px;
+   }
+   .b-my-skill-img-1{
+      grid-area: 3/1/5/3;
+      display: flex;
+      justify-content: space-around;
+      float: left;
+      
+   }
+   .b-my-skill-img-2{
+      grid-area: 5/1/7/3;
+      display: flex;
+      justify-content: space-around;
+      float: left;
+      clear: both;
+   }
+   .my-skill{
+      grid-area: 1/3/3/6;
+      margin-top: 0;
+   }
+   
+   /* page 4 */
+   .page-4{
+     height: 90vh;
+   }
+   .contact-me{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+     text-align: center;
+   }
+   a{
+     font-weight: bold;
+     text-decoration: none;
+     font-family: "Roboto Slab", serif;
+   }
+   .button{
+    color: white;
+    background-color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    width: 120px;
+    height: 30px;
+   }
+   .button:hover {
+     background-color: #0056b3;
+   }
+   
+   .git{
+     margin-top: 0;
+     align-self: center;
+   }
+   .final-intro{
+     /* width: 500px; */
+     max-width: 500px;
+   }
+   
+   /* footer */
+   
+   .page-5{
+     background-color: #c15724;
+     height: 20vh;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+   }
+   .social-media{
+     display: flex;
+     gap: 15px;
+     margin-bottom: 10px;
+   }
+   btn{
+     height: 20px;
+     width: 40px;
+     background-color: aqua;
+     border-radius: 20%;
+   }
+}
